@@ -6,7 +6,7 @@
 <body>
 
 <nav>
-    <a href="{{ route('home') }}">Home</a> |
+    <a href="{{ route('home') }}">Dashboard</a> |
     <a href="{{ route('tasks') }}">Task List</a> |
     <a href="{{ route('profile') }}">Profile</a> |
     <a href="{{ route('about') }}">About</a>
