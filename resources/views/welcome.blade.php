@@ -5,12 +5,7 @@
 </head>
 <body>
 
-<nav>
-    <a href="{{ route('home') }}">Dashboard</a> |
-    <a href="{{ route('tasks') }}">Task List</a> |
-    <a href="{{ route('profile') }}">Profile</a> |
-    <a href="{{ route('about') }}">About</a>
-</nav>
+@include('layouts.navbar')
 
 <h1>Tasks for Today</h1>
 

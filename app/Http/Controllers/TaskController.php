@@ -9,7 +9,8 @@ class TaskController extends Controller
 {
     public function welcome()
     {
-        $tasks = Task::whereDate('task_date', Carbon::today())
+        $tasks = Task::where('is_archived', false)
+            ->whereDate('task_date', Carbon::today())
             ->orderBy('id')
             ->get();
 
@@ -18,7 +19,8 @@ class TaskController extends Controller
 
     public function index()
     {
-        $tasks = Task::orderBy('task_date')
+        $tasks = Task::where('is_archived', false)
+            ->orderBy('task_date')
             ->orderBy('id')
             ->get();
 
